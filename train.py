@@ -118,6 +118,7 @@ if __name__ == '__main__':
         print("WARNING: CUDA is not available. Select 'GPU On' on kernel settings if desired.")
         device = torch.device("cpu")
     else:
+        print("CUDA is working!")
         device = torch.device("cuda")
     torch.cuda.manual_seed(seed)
 
